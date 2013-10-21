@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout>   
+
+<LinearLayout  
+        android:id="@+id/footer" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"> 
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#3083FF">
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<Button
+      android:id="@+id/loc"
+      android:layout_width="75dip"
+    android:padding="10dp"
+      android:layout_height="50dip"
+      android:background="@drawable/locus" >      
+    </Button>
+<Button
+      android:id="@+id/gll"
+      android:layout_width="85dip"
+    android:padding="10dp"
+      android:layout_height="60dip"
+      android:background="@drawable/gll" ></Button>
+</TableRow></TableLayout>
+</LinearLayout>
+    
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+   <TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView>
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="CHANGE PASSWORD"
+    android:typeface="monospace"
+    android:textSize="30dip"
+    android:paddingTop="20dp"
+    android:textColor="#0066FF"
+    android:paddingBottom="5dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="left"
+    android:padding="10dp">
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="left"
+    android:text="New password"
+    android:textSize="18dip"
+    android:textColor="#A4A4A4"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:password="true"
+                android:clickable="true"
+                android:textColor="#A4A4A4"
+                android:text="password"
+                android:inputType="text"
+                android:textSize="20dip" >
+            </EditText>
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="left"
+    android:text="Re-enter password "
+    android:textSize="18dip"
+    android:textColor="#A4A4A4"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+            <EditText
+                android:id="@+id/rpwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:password="true"
+                android:clickable="true"
+                android:textColor="#A4A4A4"
+                android:text="password"
+                android:inputType="text"
+                android:textSize="20dip" >
+            </EditText>
+ </LinearLayout>
+    <Button
+      android:id="@+id/change"
+      android:textSize="20dip"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="120dip"
+      android:textStyle="bold"
+      android:paddingTop="2dip"
+      android:paddingBottom="2dip"
+      android:paddingLeft="20dip"
+      android:paddingRight="20dip"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Submit" >
+    </Button>
+    <TextView
+        android:id="@+id/text1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:bufferType="editable"
+        android:cursorVisible="true"
+        android:textColor="#A4A4A4"
+        android:editable="true"
+        android:text=" "
+        android:textSize="40dip"
+        android:gravity="center_horizontal" >
+    </TextView>
+ </LinearLayout>
+ </ScrollView>
+
+</RelativeLayout>

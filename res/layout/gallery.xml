@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+    
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingRight="5dp"
+    android:gravity="right">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingRight="105dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:padding="5dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="60dip"
+      android:layout_height="45dip"
+      android:background="@drawable/hicon" >      
+    </Button></LinearLayout>
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="53dip"
+      android:background="@drawable/logout" ></Button>
+</TableRow></TableLayout>  
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="left"    
+    android:paddingTop="65dp"
+    android:paddingRight="5dp">
+ 
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />          
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+ </LinearLayout>
+</RelativeLayout>

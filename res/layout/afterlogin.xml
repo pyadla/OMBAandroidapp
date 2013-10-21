@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout>      
+    
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+<TextView  
+    android:id="@+id/hello"     
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="Hello Mr.ABC!"
+    android:textSize="30dip"
+    android:textColor="#0066FF"
+    android:paddingBottom="8dp"
+    android:paddingTop="30dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+    <TextView
+        android:id="@+id/text1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="fill_parent"
+        android:editable="true"
+        android:layout_height="140dip"
+        android:textColor="#676767"
+        android:text="Welcome to Confiar International Mobile Services"
+        android:textSize="25dip"
+        android:gravity="center_horizontal" >
+    </TextView>
+ </LinearLayout>
+ </ScrollView>
+</RelativeLayout>

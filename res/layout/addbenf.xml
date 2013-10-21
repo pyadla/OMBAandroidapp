@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout>   
+
+<LinearLayout  
+        android:id="@+id/footer" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"> 
+        
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:background="#3083FF"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/hicon" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/acb"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/acbb" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/tf"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/fundtr" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+<Button
+      android:id="@+id/lg"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/logout" ></Button>
+</LinearLayout>
+</TableRow></TableLayout>
+</LinearLayout>
+    
+    
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="ADD BENEFICIARY"
+    android:textSize="30dip"
+    android:typeface="monospace"
+    android:textColor="#0066FF"
+    android:paddingTop="15dp"
+    android:paddingBottom="7dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:gravity="center_horizontal">
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<EditText android:id="@+id/benname"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:editable="true"
+    android:textColor="#A4A4A4"
+    android:inputType="text"
+    android:hint="Beneficiary Name"
+    android:textSize="15dip" >
+    </EditText></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<EditText android:id="@+id/bcode"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:editable="true"
+    android:textColor="#A4A4A4"
+    android:inputType="text"
+    android:hint="Bank Code"
+    android:textSize="15dip" >
+    </EditText></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<EditText android:id="@+id/baccn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:editable="true"
+    android:textColor="#A4A4A4"
+    android:inputType="text"
+    android:hint="Account Number"
+    android:textSize="15dip" >
+    </EditText></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<Button android:text=" Submit "
+    android:textSize="20dip"
+    android:id="@+id/sub"
+    android:background="@layout/bluecell"
+    android:clickable="true"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:textColor="#FFFFFF"
+    android:padding="4dp"
+    android:layout_height="wrap_content"/></LinearLayout>
+<TextView       
+    android:id="@+id/status"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text=""
+    android:textSize="18dip"
+    android:textColor="#0066FF"
+    android:paddingTop="15dp"
+    android:paddingBottom="7dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+    </LinearLayout>
+ </ScrollView>
+
+</RelativeLayout>

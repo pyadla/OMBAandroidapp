@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout>   
+
+<LinearLayout  
+        android:id="@+id/footer" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"> 
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#3083FF">
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<Button
+      android:id="@+id/loc"
+      android:layout_width="75dip"
+    android:padding="10dp"
+      android:layout_height="50dip"
+      android:background="@drawable/locus" >      
+    </Button>
+<Button
+      android:id="@+id/ab"
+      android:layout_width="60dip"
+      android:padding="10dp"
+      android:layout_height="50dip"
+      android:background="@drawable/about" >      
+    </Button>
+</TableRow></TableLayout>
+</LinearLayout>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="30dp">
+
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="CUSTOMER LOGIN"      
+    android:typeface="monospace"
+    android:paddingTop="10dp"
+    android:textSize="30dip"
+    android:textColor="#0066FF"
+    android:paddingBottom="10dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+<EditText
+                android:id="@+id/cid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:textColor="#A4A4A4"
+                android:inputType="text"
+                android:clickable="true"
+                android:hint="CustomerId"
+                android:textSize="20dip" >
+            </EditText>
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:password="true"
+                android:clickable="true"
+                android:textColor="#A4A4A4"
+                android:hint="password"
+                android:inputType="text"
+                android:textSize="20dip" >
+            </EditText>
+
+    <Button
+      android:id="@+id/login"
+      android:textSize="20dip"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="220dip"
+      android:textStyle="bold"
+      android:paddingTop="2dip"
+      android:paddingBottom="2dip"
+      android:paddingLeft="20dip"
+      android:paddingRight="20dip"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Login" >
+    </Button>
+    <TextView
+        android:id="@+id/text1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:bufferType="editable"
+        android:padding="2dp"
+        android:textColor="#A4A4A4"
+        android:editable="true"
+        android:text=""
+        android:textSize="18dip"
+        android:gravity="center_horizontal" >
+    </TextView>
+     <Button
+      android:id="@+id/chpwd"
+      android:textSize="20dip"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="220dip"
+      android:textStyle="bold"
+      android:paddingTop="2dip"
+      android:paddingBottom="2dip"
+      android:paddingLeft="20dip"
+      android:paddingRight="20dip"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Forgot Password?" >
+    </Button>
+ </LinearLayout>
+ </ScrollView>
+</RelativeLayout>

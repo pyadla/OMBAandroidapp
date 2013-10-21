@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:gravity="left">
+   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >     
+    </Button>
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+</TableRow></TableLayout> 
+</LinearLayout>  
+ <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#3083FF"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="60dip"
+      android:layout_height="45dip"
+      android:background="@drawable/hicon" >     
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+<Button
+      android:id="@+id/macc"
+      android:layout_width="55dip"
+      android:layout_height="40dip"
+      android:background="@drawable/manacc" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="6dp">
+<Button
+      android:id="@+id/loc"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/locus" >     
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="53dip"
+      android:background="@drawable/logout" ></Button>
+</LinearLayout>
+</TableRow></TableLayout>
+</LinearLayout>
+   
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFF"
+  android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="100dp">
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+<TextView android:textSize="30dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="ACCOUNT SETTINGS"     
+      android:typeface="monospace"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:padding="10dp"/>
+
+<Button
+      android:id="@+id/secq"
+      android:textSize="20dip"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="250dip"
+      android:textStyle="bold"
+      android:padding="4dp"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Add Security Question" >
+    </Button>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+            <Spinner android:id="@+id/sqs"
+             android:visibility="gone"
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             android:drawSelectorOnTop="true"></Spinner>
+             <EditText android:id="@+id/sqans"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                        android:editable="true"
+                        android:textColor="#A4A4A4"
+                        android:inputType="text"
+                        android:password="true"
+                        android:text="EnterAnswer"
+                        android:textSize="15dip" >
+    </EditText> 
+    <Button
+      android:id="@+id/sub"
+      android:textSize="20dip"
+      android:visibility="gone"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="250dip"
+      android:textStyle="bold"
+      android:padding="4dp"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Submit" >
+    </Button> 
+    <TextView
+      android:id="@+id/stt"
+      android:textSize="18dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Account Settings" android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:visibility="gone"
+      android:padding="2dp"/>      
+</LinearLayout>
+    <TextView android:textSize="15dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Account Settings" android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:visibility="gone"
+      android:padding="5dp"/>
+ <Button
+      android:id="@+id/chpwd"
+      android:textSize="20dip"
+      android:textColor="#F2F2F2"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="250dip"
+      android:textStyle="bold"
+      android:padding="4dp"
+      android:layout_height="35dip"
+      android:clickable="true"
+      android:background="@layout/buttonlayout"
+      android:text="Change Password" >
+    </Button>
+ </LinearLayout>
+ </ScrollView>
+
+</RelativeLayout>

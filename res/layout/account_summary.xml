@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="100dp">
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="ACCOUNT BALANCE"
+    android:typeface="monospace"
+    android:textSize="30dip"
+    android:textColor="#0066FF"
+    android:paddingBottom="8dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left" >
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="2dp"
+    android:background="@layout/bluecell"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+<TextView
+      android:textSize="20dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:paddingRight="10dp"
+      android:paddingLeft="10dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="AccountNo" >
+</TextView></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+<TextView
+      android:textSize="20dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="Balance(Rs)" >
+</TextView></LinearLayout>
+ </TableRow>
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="25dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="5dp"
+    android:gravity="left">
+<TextView
+      android:id="@+id/ac1"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="110123400001" 
+      android:visibility="invisible">
+</TextView>
+<TextView
+      android:id="@+id/bal1"
+      android:textSize="20dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:textStyle="bold"
+      android:background="@layout/celllayout"
+      android:text="1003000.0" 
+      android:visibility="invisible">
+</TextView>
+ </TableRow>
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="25dp"
+    android:paddingBottom="8dp"
+    android:gravity="left">
+<TextView
+      android:id="@+id/ac2"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="110123400006"
+      android:visibility="invisible" >
+</TextView>
+<TextView
+      android:id="@+id/bal2"
+      android:textSize="20dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:textStyle="bold"
+      android:background="@layout/celllayout"
+      android:text="873000.0" 
+      android:visibility="invisible">
+</TextView>
+ </TableRow>
+ <TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="25dp"
+    android:paddingBottom="8dp"
+    android:gravity="left">
+<TextView
+      android:id="@+id/ac3"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="110123400007" 
+      android:visibility="invisible">
+</TextView>
+<TextView
+      android:id="@+id/bal3"
+      android:textSize="20dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:textStyle="bold"
+      android:background="@layout/celllayout"
+      android:text="5997890.0"
+      android:visibility="invisible">
+</TextView>
+ </TableRow>
+ </TableLayout>
+ </LinearLayout>
+ </LinearLayout>
+ </ScrollView>
+
+<RelativeLayout  
+        android:id="@+id/InnerRelativeLayout" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" > 
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:background="#3083FF"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="60dip"
+      android:layout_height="45dip"
+      android:background="@drawable/hicon" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+<Button
+      android:id="@+id/mini"
+      android:layout_width="55dip"
+      android:layout_height="40dip"
+      android:background="@drawable/min" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="6dp">
+<Button
+      android:id="@+id/tf"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/fundtr" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="53dip"
+      android:background="@drawable/logout" ></Button>
+</LinearLayout>
+</TableRow></TableLayout></RelativeLayout>
+</RelativeLayout>

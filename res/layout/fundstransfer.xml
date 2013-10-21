@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >    
+    </Button>
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout> 
+  
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+ 
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#3083FF"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/hicon" >    
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/acb"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/acbb" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+<Button
+      android:id="@+id/addb"
+      android:layout_width="65dip"
+      android:layout_height="45dip"
+      android:background="@drawable/addben" >    
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/logout" ></Button>
+</LinearLayout>
+</TableRow></TableLayout>
+</LinearLayout>
+  
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal">
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+    <TextView android:textSize="30dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="TRANSFER FUNDS"
+      android:typeface="monospace"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:paddingLeft="4dp"
+      android:paddingRight="4dp"
+      android:paddingBottom="4dp"/>
+   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center_horizontal">
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+<TextView android:textSize="20dip"
+      android:id="@+id/t1"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="From Account:"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingLeft="12dp"/>
+</TableRow>
+       <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:textSize="15dip"
+    android:textColor="#FFFFFF"
+    android:background="@layout/bluecell"
+    android:padding="3dp"
+    android:editable="true"
+    android:layout_height="wrap_content"
+    android:text="From Account No" />
+
+</TableRow>
+ <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+<TextView android:textSize="20dip"
+      android:id="@+id/t1"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="To Account:"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingLeft="12dp"/>
+</TableRow>
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:textColor="#FFFFFF"
+    android:background="@layout/bluecell"
+    android:padding="3dp"
+    android:editable="true"
+    android:layout_height="wrap_content"
+    android:textSize="15dip"
+    android:text="To Account No" />
+</TableRow></TableLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal">
+<EditText android:id="@+id/amt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:editable="true"
+    android:inputType="text"
+    android:textColor="#A4A4A4"
+    android:hint="Amount"
+    android:textSize="20dip"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    </EditText></LinearLayout>
+
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<Button android:text=" Submit "
+    android:textSize="20dip"
+    android:id="@+id/send"
+    android:background="@layout/bluecell"
+    android:clickable="true"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:textColor="#FFFFFF"
+    android:padding="4dp"
+    android:layout_height="wrap_content"/>
+</TableRow></TableLayout>
+<TextView
+      android:id="@+id/trstatus"
+      android:textSize="20dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="" android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:paddingLeft="18dp"/>
+<Button android:text="Transfer"
+    android:textSize="20dip"
+    android:id="@+id/tg"
+    android:background="@layout/bluecell"
+    android:clickable="true"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:textColor="#FFFFFF"
+    android:padding="4dp"
+    android:visibility="gone"
+    android:layout_height="wrap_content"/>
+ </LinearLayout>
+ </ScrollView>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listdisp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    >
+    <ListView android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:background="#3083FF"
+        android:textColor="#FFFFFF"
+        android:layout_height="fill_parent" />  
+ 
+</LinearLayout>
+
+
+</RelativeLayout>

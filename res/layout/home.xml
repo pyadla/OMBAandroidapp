@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right" >
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:background="#3083FF"
+    android:gravity="left">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >     
+    </Button>
+    <ImageView
+        android:layout_width="180dip"
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right">
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/logout" >     
+    </Button></LinearLayout>
+    </TableRow></TableLayout>
+
+</LinearLayout>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_below="@+id/header">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom" >
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/acbal"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/acbb" >     
+    </Button>
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/mini"
+      android:layout_width="65dip"
+      android:layout_height="45dip"
+      android:background="@drawable/min" ></Button>
+</LinearLayout></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/t1"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:maxLines="2"
+      android:clickable="true"
+      android:gravity="center_horizontal"
+      android:text="Balance\nEnquiry" >
+</TextView>
+<TextView
+      android:id="@+id/t2"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:clickable="true"
+      android:textStyle="bold"
+      android:paddingLeft="5dp"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Mini\nStatement" >
+</TextView></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/trh"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/minit" >     
+    </Button>
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/trf"
+      android:layout_width="65dip"
+      android:layout_height="45dip"
+      android:background="@drawable/fundtr" ></Button>
+</LinearLayout></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/t3"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:maxLines="2"
+      android:clickable="true"
+      android:gravity="center_horizontal"
+      android:text="Transaction\nHistory" >
+</TextView>
+<TextView
+      android:id="@+id/t4"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingLeft="5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Transfer\nFunds" >
+</TextView></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/scd"
+      android:layout_width="60dip"
+      android:layout_height="45dip"
+      android:background="@drawable/scd" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/addb"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/addben" >     
+    </Button>
+    </LinearLayout>
+</TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/t5"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingLeft="5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Schedule\nTransfer" >
+</TextView>
+<TextView
+      android:id="@+id/t6"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:maxLines="2"
+      android:gravity="center_horizontal"
+      android:text="Add\nBeneficiary" >
+</TextView></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/macc"
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/manacc" >     
+    </Button>
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/settings"
+      android:layout_width="65dip"
+      android:layout_height="45dip"
+      android:background="@drawable/settings" ></Button>
+</LinearLayout></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/t7"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:maxLines="2"
+      android:gravity="center_horizontal"
+      android:text="Change\nContact Info" >
+</TextView>
+<TextView
+      android:id="@+id/t8"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:clickable="true"
+      android:paddingLeft="5dp"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Security" >
+</TextView></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+      android:paddingTop="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/loc"
+      android:layout_width="75dip"
+      android:layout_height="50dip"
+      android:background="@drawable/locus" >         
+    </Button>
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+<Button
+      android:id="@+id/gll"
+      android:layout_width="85dip"
+      android:layout_height="60dip"
+      android:background="@drawable/gll" ></Button>
+</LinearLayout></TableRow>
+<TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/t9"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:clickable="true"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:maxLines="2"
+      android:gravity="center_horizontal"
+      android:text="Locate US" >
+</TextView>
+<TextView
+      android:id="@+id/t10"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:textStyle="bold"
+      android:paddingLeft="5dp"
+      android:clickable="true"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Gallery" >
+</TextView></TableRow>
+</TableLayout>
+ </LinearLayout>
+ </ScrollView>
+ </RelativeLayout>

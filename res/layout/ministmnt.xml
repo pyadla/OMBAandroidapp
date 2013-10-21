@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="#3083FF"
+    android:paddingTop="3dp" >
+
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:gravity="left">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp">
+<Button
+      android:layout_width="65dip"
+      android:layout_height="50dip"
+      android:background="@drawable/icon" >      
+    </Button>
+    <ImageView
+        android:layout_width="200dip" 
+        android:layout_height="fill_parent"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+
+</TableRow></TableLayout>
+</LinearLayout>   
+
+<LinearLayout  
+        android:id="@+id/footer" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"> 
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+<TableRow 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dp"
+    android:background="#3083FF"
+    android:gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+<Button
+      android:id="@+id/home"
+      android:layout_width="60dip"
+      android:layout_height="45dip"
+      android:background="@drawable/hicon" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+<Button
+      android:id="@+id/trh"
+      android:layout_width="50dip"
+      android:layout_height="40dip"
+      android:background="@drawable/minit" ></Button>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="6dp">
+<Button
+      android:id="@+id/tf"
+      android:layout_width="70dip"
+      android:layout_height="50dip"
+      android:background="@drawable/fundtr" >      
+    </Button></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+
+<Button
+      android:id="@+id/lg"
+      android:layout_width="65dip"
+      android:layout_height="53dip"
+      android:background="@drawable/logout" ></Button>
+</LinearLayout>
+</TableRow></TableLayout>
+</LinearLayout>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/header">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="right"><TextView
+      android:id="@+id/name"
+      android:textSize="18dip"
+      android:textColor="#A4A4A4"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:gravity="right"
+      android:textStyle="bold"
+      android:paddingRight="5dp"
+      android:layout_height="wrap_content"
+      android:text="" >
+</TextView></LinearLayout>
+<TextView       
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="MINI STATEMENT"
+    android:textSize="30dip"    
+    android:typeface="monospace"
+    android:textColor="#0066FF"
+    android:paddingTop="10dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:gravity="center_horizontal">
+    <TextView android:textSize="16dip"
+      android:textColor="#3083FF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Choose an account for which you want to view the MiniStatement"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:padding="4dp"/>
+<RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/accnos">
+<RadioButton
+    android:id="@+id/rb1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#5C5C5C"
+    android:visibility="gone"
+    android:textSize="18dip"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="110123400001" />
+<RadioButton
+    android:id="@+id/rb2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#5C5C5C"
+    android:textSize="18dip"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="110123400006"
+    android:visibility="gone" />
+<RadioButton
+    android:id="@+id/rb3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#5C5C5C"
+    android:textSize="18dip"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="110123400006" 
+    android:visibility="gone">
+</RadioButton></RadioGroup>
+</LinearLayout>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:layout_gravity="center_horizontal" >
+<TableRow 
+    android:id="@+id/minihr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="2dp"
+     android:background="@layout/bluecell"
+    android:gravity="center_horizontal"
+    android:visibility="gone">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+<TextView
+      android:textSize="18dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:paddingRight="10dp"
+      android:paddingLeft="10dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="Date" >
+</TextView></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+<TextView
+      android:textSize="18dip"
+      android:textColor="#FFFFFF"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="Amount" >
+</TextView></LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+<TextView
+      android:textSize="18dip"
+      android:textColor="#FFFFFF"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:textStyle="bold"
+      android:text="Db./Cr." >
+</TextView></LinearLayout>
+ </TableRow>
+<TableRow 
+    android:id="@+id/minir1"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/dt1"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="11-08-2011" >
+</TextView>
+<TextView
+      android:id="@+id/am1"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:padding="4dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="2500.0" >
+</TextView>
+<TextView
+      android:id="@+id/cd1"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:text="Debit" >
+</TextView>
+ </TableRow>
+ <TableRow 
+    android:id="@+id/minir2"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/dt2"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="11-08-2011" >
+</TextView>
+<TextView
+      android:id="@+id/am2"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:padding="4dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="2500.0" >
+</TextView>
+<TextView
+      android:id="@+id/cd2"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:text="Debit" >
+</TextView>
+ </TableRow>
+ <TableRow 
+    android:id="@+id/minir3"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/dt3"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="11-08-2011" >
+</TextView>
+<TextView
+      android:id="@+id/am3"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:padding="4dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="2500.0" >
+</TextView>
+<TextView
+      android:id="@+id/cd3"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:text="Debit" >
+</TextView>
+ </TableRow>
+ <TableRow 
+    android:id="@+id/minir4"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/dt4"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="11-08-2011" >
+</TextView>
+<TextView
+      android:id="@+id/am4"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:padding="4dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="2500.0" >
+</TextView>
+<TextView
+      android:id="@+id/cd4"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:text="Debit" >
+</TextView>
+ </TableRow>
+ <TableRow 
+    android:id="@+id/minir5"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal">
+<TextView
+      android:id="@+id/dt5"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="11-08-2011" >
+</TextView>
+<TextView
+      android:id="@+id/am5"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:padding="4dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+       android:gravity="center_horizontal"
+      android:text="2500.0" >
+</TextView>
+<TextView
+      android:id="@+id/cd5"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+       android:gravity="center_horizontal"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:text="Debit" >
+</TextView>
+ </TableRow>
+ </TableLayout>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+ <TextView
+      android:id="@+id/acctext"
+      android:visibility="gone"
+      android:textSize="18dip"
+      android:textColor="#5E5E5E"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="4dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:text="Account balance : " >
+</TextView>
+<TextView       
+    android:id="@+id/accbal"
+    android:visibility="gone"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:editable="true"
+    android:gravity="center_horizontal"
+    android:text="110190.0"
+    android:textStyle="bold"
+    android:textSize="18dip"
+    android:textColor="#FFFFFF"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@layout/bluecell">
+    </TextView></LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
